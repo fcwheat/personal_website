@@ -15,6 +15,22 @@ $(document).ready(function(){
 
 
 
+      $(".insta_ham").hover(function() {
+          console.log('hover');
+          $(this).animate({
+                            height:"42%",
+                            width:"42%"
+                          },150);
+        }, function() {
+                    $(this).animate({
+                            height:"28%",
+                            width:"28%"
+                          },150);
+          /* Stuff to do when the mouse leaves the element */
+        });
+
+
+
 
 
 
