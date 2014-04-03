@@ -13,6 +13,16 @@ module.exports = function(app) {
 
     });
 
+
+  app.get('/home', function(req, res) {
+
+
+    res.render('index.ejs');
+
+
+
+    });
+
     app.get('/about', function(req, res) {
 
 
@@ -27,6 +37,15 @@ module.exports = function(app) {
 
 
     res.render('contact.ejs');
+
+
+
+    });
+
+  app.get('*', function(req, res) {
+
+
+    res.render('404.ejs');
 
 
 
