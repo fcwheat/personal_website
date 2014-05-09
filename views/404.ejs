@@ -136,12 +136,15 @@
 <div class="row">
   <div class="col-xs-6 col-xs-offset-3">
 
-      <div class="row">
+      <div class="row" id = "normalHeader">
         <div style = "border-top: 1px solid rgba(16, 16, 16, 0.14)"></div>
         <div style = 'text-align:center;font-size: 20px; line-height: .1em;'>
           <div class = "col-sm-2 col-sm-offset-3 col-xs-12"><a href = "/"><span>Home</span></a></div><div class = "col-sm-2 col-xs-12"><a href = "/about"><span> About </span></a></div><div class = "col-sm-2 col-xs-12"><a class = "active" href = "/contact"> <span> Contact </span> </a> </div>
         </div>
 
+      </div>
+      <div class = "row" id = "smallHeader" style = "text-align:center;font-size:35px;padding:5px;" hidden>
+          <div class = "col-xs-12"><a href = "/"><span>Home</span></a></div><div class = "col-xs-12"><a href = "/about"><span> About </span></a></div><div class = "col-xs-12"><a href = "/contact"> <span> Contact </span> </a> </div>
       </div>
 
 
@@ -178,4 +181,11 @@
 
 
   </body>
+  <script>
+  if ($(window).width() < 770) {
+  console.log('her');
+    $('#smallHeader').show();
+    $('#normalHeader').hide();
+} 
+</script>
 </html>
