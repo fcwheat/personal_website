@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
 
+      $("#navleft").sticky({topSpacing:0});
+      //$("img").unveil();
+
         $(".web").hover(function() {
           console.log('hover');
           $(this).animate({
@@ -26,8 +29,25 @@ $(document).ready(function(){
                             height:"28%",
                             width:"28%"
                           },150);
-          /* Stuff to do when the mouse leaves the element */
+
         });
+
+      $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+
 
 
 
