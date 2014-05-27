@@ -7,7 +7,7 @@ $(document).ready(function(){
       }
     },5000);
 
-      $("#navleft").sticky({topSpacing:15});
+      //$("#navleft").sticky({topSpacing:15});
       //$("img").unveil();
 
         $(".web").hover(function() {
@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 
 
-      $(".insta_ham").hover(function() {
+     /* $(".insta_ham").hover(function() {
           console.log('hover');
           $(this).animate({
                             height:"42%",
@@ -36,7 +36,7 @@ $(document).ready(function(){
                             width:"28%"
                           },150);
 
-        });
+        });*/
 
       $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
