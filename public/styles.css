@@ -96,12 +96,10 @@
         }
 
         .contentHead{
-          font-size: 50px;
-          font-family: Lobster,cursive;
-          font-weight: bold;
-          color:#428bca;
+          color:#727171;
+          font-size: 40px;
           padding-left: 40px;
-          padding-top:10px;
+          padding-top:2px;
         }
 
 
@@ -111,7 +109,7 @@
         }
 
         body{
-          font-family: 'Istok Web', sans-serif;
+          font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
 
         .web{
@@ -136,37 +134,31 @@
           border: 5px solid black;
         }
 
-        .cursive {
-          font-family: Lobster,cursive;
-          font-size: 22px;
-          font-weight: bold;
-          color:#428bca;
-        }
+
 
         .cursiveA{
-          font-family: Lobster,cursive;
+          
           font-size: 30px;
           font-weight: bold;
           color:#428bca;
 
         }
 
-        .active a{
-          color: #428bca;
+        .act a{
+          color: red;
 
         }
 
-
         .header{
-         color: #BDBDBD;
+         
          text-align:center;
-         font-size:20px;
+         font-size:18px;
          display:inline-block;
          padding:15px;
         }
 
         .header a{
-          color: #BDBDBD;
+          color: #B4D6D;
           text-decoration: none;
           -webkit-transition:background 5s;
           -moz-transition:background 5s;
@@ -181,21 +173,51 @@
           color:#aaa;
         }
         #octo:hover{
-          color:#7fb0d8;
+          color:#79B3AF;
           text-decoration: none;
         }
         #twitter{
           color:#aaa;
         }
         #twitter:hover{
-          color:#7fb0d8;
+          color:#79B3AF;
           text-decoration: none;
         }
         #linked{
           color:#aaa;
         }
         #linked:hover{
-          color:#7fb0d8;
+          color:#79B3AF;
           text-decoration: none;
         }
+
+
+        /* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+        .cursive {
+          
+          font-size: 22px;
+          font-weight: lighter;
+          color:#428bca;
+        }
+
+       
 

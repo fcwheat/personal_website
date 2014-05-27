@@ -1,7 +1,13 @@
 $(document).ready(function(){
 
+      setInterval(function(){
+      if ($("#typed").text() == "thinking.")
+      {
+        $("#typed-cursor").hide();
+      }
+    },5000);
 
-      $("#navleft").sticky({topSpacing:0});
+      $("#navleft").sticky({topSpacing:15});
       //$("img").unveil();
 
         $(".web").hover(function() {
@@ -40,7 +46,7 @@ $(document).ready(function(){
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 1000);
+        }, 500);
         return false;
       }
     }

@@ -23,7 +23,7 @@ module.exports = function(app) {
 
     });
 
-    app.get('/about', function(req, res) {
+   /* app.get('/about', function(req, res) {
 
 
     res.render('about.ejs');
@@ -40,12 +40,12 @@ module.exports = function(app) {
 
 
 
-    });
+    });*/
 
   app.get('*', function(req, res) {
 
 
-    res.render('404.ejs');
+    res.render('index.ejs');
 
 
 

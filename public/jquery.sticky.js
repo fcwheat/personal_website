@@ -91,7 +91,7 @@
 
           var stickyWrapper = stickyElement.parent();
           console.log($.support);
-          stickyWrapper.css('float', 'right');
+          //stickyWrapper.css('text-align', 'right');
           stickyWrapper.css('height', stickyElement.outerHeight());
           sticked.push({
             topSpacing: o.topSpacing,
