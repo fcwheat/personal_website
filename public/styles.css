@@ -149,7 +149,6 @@
         }
 
         .header{
-         
          text-align:center;
          font-size:18px;
          display:inline-block;
@@ -157,15 +156,13 @@
         }
 
         .header a{
-          color: #B4D6D;
-          text-decoration: none;
-          -webkit-transition:background 5s;
-          -moz-transition:background 5s;
-          -o-transition:background 5s;
-          transition:background 5s
+          color:#ccc;
         }
+
+       
         .header a:hover{
-          color:#428bca;
+          color: #79B3AF;
+          text-decoration: none;
         }
 
         #octo{
@@ -218,5 +215,30 @@
           color:#428bca;
         }
 
+.title{
+            font-size: 24px;
+          color:#727171;
+
+}
+.date{
+  font-size:16px;
+  font-weight: lighter;
+  color:#aaa;
+}
+
+.image{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width:80%;
+
+}
+.sources{
+  color:#aaa;
+  font-size: 14px;
+}
        
 

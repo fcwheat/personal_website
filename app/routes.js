@@ -17,11 +17,16 @@ module.exports = function(app) {
   app.get('/home', function(req, res) {
 
 
-    res.render('index.ejs');
+    res.render('home.ejs');
 
 
 
     });
+
+  app.get('/thoughts',function(req,res)
+  {
+    res.render('thoughts.ejs');
+  });
 
    /* app.get('/about', function(req, res) {
 
