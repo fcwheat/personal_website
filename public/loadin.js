@@ -7,6 +7,7 @@
     var $publications = $('<div>');
     var $about = $('<div>');
     var $contact = $('<div>');
+    var $thoughts = $('<div>');
 
 
     // loading the html into the variables
@@ -34,6 +35,10 @@
       console.log("Loaded contact")
     });
 
+    $thoughts.load("/public/homeHTML/thoughts.html",function(){
+      console.log("Loaded thoughts")
+    });
+
 
     //$("#content").html($downloadRun); // loads the initial content
 
@@ -46,6 +51,12 @@
      //$( window ).scrollTop(0);
     });
 
+    $("#thoughtsA").click(function(){ 
+     $("#content").html($thoughts);
+     $(".active").removeClass('active');
+     $("#thoughts").addClass('active');
+     //$( window ).scrollTop(0);
+    });
 
     $("#webA").click(function(){ 
         console.log($web);

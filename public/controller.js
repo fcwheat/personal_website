@@ -4,7 +4,7 @@ $(document).ready(function(){
       if ($("#typed").text() == "thinking.")
       {
         $("#typed-cursor").hide();
-        location.href="http://fcarterwheatley.com/home";
+        //location.href="http://fcarterwheatley.com/home";
       }
     },5000);
 
