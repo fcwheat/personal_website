@@ -31,8 +31,9 @@
      <a href = "http://github.com/fcwheat" id = "octo" class="fa fa-github fa-2x"style = "height:40px;position:absolute;top:0px;right:75px;padding:10px;"></a>
      <a href = "http://instagram.com/fcwheat" id = "linked" class="fa fa-instagram fa-2x"style = "height:40px;position:absolute;top:0px;right:10px;padding:10px;"></a>
 
+     <% if (content === 'about') { %> 
       <div class="row" id = "normalHeader" style = "padding-top:15px;text-align:center;">
-          <div class = "header"><a style = "color:#79B3AF;" href = "/home"> Home</a></div>
+          <div class = "header"><a style = "color:#79B3AF;" href = "/home"> </a></div>
       </div>
       <div class = "row">
         <div class = "col-md-12 col-md-offset-0 col-xs-10 col-xs-offset-1">
@@ -45,12 +46,13 @@
     </div>
     </div>
       <hr>
+      <% } %>
 </div>
 
         <div class="row">
 
   <div class="col-sm-2 col-sm-offset-1">
-    <div class="sidebar-nav"  style = "float:right;">
+    <div class="sidebar-nav"  style = "float:right;margin-top:40px;margin-bottom:-20px;">
       <div class="navbar navbar-default" role="navigation"  style = "background-color:white;border:0px solid white;">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
@@ -61,15 +63,15 @@
           </button>
           <span class="visible-xs navbar-brand"></span>
         </div>
-        <div class="navbar-collapse collapse sidebar-navbar-collapse"  style = "margin-top:30px;">
+        <div class="navbar-collapse collapse sidebar-navbar-collapse"  style = "margin-top:0px;">
           <ul class="nav navbar-nav" id = "nav" style = "border-left:1px solid #B4D6D4;font-color:white;">
-            <li id = "about" class = "cursive active"><a href="#content" id = "aboutA">About</a></li>
-            <li id = "projects" class = "cursive"><a href="#content" id = "projectsA">Projects</a></li>
-            <li id = "thoughts" class = "cursive"><a href="#content" id = "thoughtsA">Thoughts</a></li>
-            <li id = "web" class = "cursive"><a href="#content" id = "webA">Web Dev</a></li>
-            <li id = "mobile" class = "cursive"><a href="#content" id = "mobileA">Mobile Dev</a></li>
-            <li id = "publications" class = "cursive"><a href="#content" id = "publicationsA">Publications</a></li>
-            <li id = "contact" class = "cursive"><a href="#content" id = "contactA">Contact</a></li>
+            <li id = "about" class = "cursive active"><a href="/about" id = "aboutA">About</a></li>
+            <li id = "projects" class = "cursive"><a href="/projects" id = "projectsA">Projects</a></li>
+            <li id = "thoughts" class = "cursive"><a href="/thoughts" id = "thoughtsA">Thoughts</a></li>
+            <li id = "web" class = "cursive"><a href="/web" id = "webA">Web Dev</a></li>
+            <li id = "mobile" class = "cursive"><a href="/mobile" id = "mobileA">Mobile Dev</a></li>
+            <li id = "publications" class = "cursive"><a href="/publications" id = "publicationsA">Publications</a></li>
+            <li id = "contact" class = "cursive"><a href="/contact" id = "contactA">Contact</a></li>
             <!--<li class = "cursive"><a href="#top">Back To Top</a></li>-->
           </ul>
         </div><!--/.nav-collapse -->
@@ -79,146 +81,10 @@
 
 
 
-
+<div class = "hiddenContent" hidden><%= content %></div>
         <div class = "col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1"  style = "" id = "content" >
-            <div class = "row">
- <div class="col-md-12 col-xs-12" style = "text-align:center;">
-               <img class = "insta_ham" src = "http://distilleryimage9.ak.instagram.com/0bf1ef824bc011e2876222000a9f0a1b_7.jpg" >
-       
-              <img class = "insta_ham" src = "http://distilleryimage10.ak.instagram.com/7af5d97c969a11e382b512617d8fdbd6_8.jpg" >
- 
-               <img class = "insta_ham" src = "http://distilleryimage6.ak.instagram.com/94f0d370b1be11e28df322000a1f9367_7.jpg" >
-     
-  </div>
-</div>
-<div class="row"  style = "margin-top:0px;"><div class="col-md-6 col-xs-12">
-    <div class="row">
-        <div class="col-xs-12" style = "padding-top:40px;">
-            <p class = "cursiveA" style = "text-align:center;">Name</p>
-          </div> 
-
-        </div>
-      <div class="row">
-          <div class="col-md-12 col-sm-12" style = "text-align:center;">
-                <p style = "font-size: 26px; color:#aaa">F. Carter Wheatley</p>
-  </div>
-</div>
-</div>
-<div class="col-md-6 col-xs-12" style = "margin-top:10px;">
-
-    <div class="row">
-        <div class="col-xs-12" style = "padding-top:30px;">
-            <p class = "cursiveA" style = "text-align:center;">Age</p>
-          </div> 
-
-        </div>
-      <div class="row">
-          <div class="col-md-12 col-sm-12" style = "text-align:center;">
-                <p style = "font-size: 26px; color:#aaa">22</p>
-  </div>
-</div>
-</div>
-</div>
-
-<div class="row"><div class="col-md-6 col-xs-12">
-    <div class="row">
-        <div class="col-xs-12" style = "padding-top:30px;">
-            <p class = "cursiveA" style = "text-align:center;">From</p>
-          </div> 
-
-        </div>
-      <div class="row">
-          <div class="col-md-12 col-sm-12" style = "text-align:center;">
-              <img class = "img-responsive" src = "/public/chitown.jpeg" style = "display:block;margin-left:auto;margin-right:auto;height:120px;margin-top:-10px;margin-bottom:20px;">
-
-  </div>
-</div>
-</div>
-<div class="col-md-6 col-xs-12">
-
-    <div class="row">
-        <div class="col-xs-12" style = "padding-top:30px;">
-            <p class = "cursiveA" style = "text-align:center;">Attend</p>
-          </div> 
-
-        </div>
-      <div class="row">
-          <div class="col-md-12 col-sm-12" style = "text-align:center;">
-          <img class = "img-responsive" src = "/public/bu.jpeg" style = "display:block;margin-left:auto;margin-right:auto;height:100px;margin-top:12px;">
-  </div>
-</div>
-</div>
-</div>
-
-<div class="row"><div class="col-md-6 col-xs-12">
-    <div class="row">
-        <div class="col-xs-12" style = "padding-top:30px;">
-            <p class = "cursiveA" style = "text-align:center;">Graduate</p>
-          </div> 
-
-        </div>
-      <div class="row">
-          <div class="col-md-12 col-sm-12" style = "text-align:center;">
-                <p style = "font-size: 26px; color:#aaa">2015</p>
-  </div>
-</div>
-</div>
-<div class="col-md-6 col-xs-12">
-
-    <div class="row">
-        <div class="col-xs-12" style = "padding-top:30px;">
-            <p class = "cursiveA" style = "text-align:center;">Study</p>
-          </div> 
-
-        </div>
-      <div class="row">
-          <div class="col-md-12 col-sm-12" style = "text-align:center;">
-                <p style = "font-size: 26px; color:#aaa">Computer Engineering</p>
-  </div>
-</div>
-</div>
-</div>
-
-<div class="row"><div class="col-xs-12">
-    <div class="row">
-        <div class="col-xs-12" style = "padding-top:30px;">
-            <p class = "cursiveA" style = "text-align:center;">Use</p>
-          </div> 
-
-        </div>
-      <div class="row">
-          <div class="col-md-12 col-sm-12" style = "text-align:center;">
-              <img class = "img-responsive" src = "/public/tech.jpeg" style = "display:inline;margin-left:auto;margin-right:auto;height:100px;margin-top:0px;margin-bottom:20px;">
-              <img src = "/public/node.jpeg" style = "display:inline;margin-left:auto;margin-right:auto;height:100px;margin-top:0px;margin-bottom:20px;">
-              <img src = "/public/cplpl.jpeg" style = "display:inline;margin-left:auto;margin-right:auto;height:100px;margin-top:0px;margin-bottom:20px;">
-              <img src = "/public/python.jpeg" style = "display:inline;margin-left:auto;margin-right:auto;height:100px;margin-top:0px;margin-bottom:20px;">
-
-  </div>
-</div>
-</div>
-
-</div>
-
-
-
-<div class="row"><div class="col-xs-12">
-    <div class="row">
-        <div class="col-xs-12" style = "padding-top:30px;">
-            <p class = "cursiveA" style = "text-align:center;">Read</p>
-          </div> 
-
-        </div>
-      <div class="row">
-          <div class="col-md-12 col-sm-12" style = "text-align:center;">
-              <img src = "/public/hem2.jpg" style = "display:inline;margin-left:auto;margin-right:auto;height:150px;margin-top:0px;margin-bottom:20px;">
-              <img src = "/public/hem3.jpeg" style = "display:inline;margin-left:auto;margin-right:auto;height:150px;margin-top:0px;margin-bottom:20px;">
-              <img src = "/public/tolst1.jpeg" style = "display:inline;margin-left:auto;margin-right:auto;height:150px;margin-top:0px;margin-bottom:20px;">
-              <img src = "/public/fitz1.jpeg" style = "display:inline;margin-left:auto;margin-right:auto;height:150px;margin-top:0px;margin-bottom:20px;">
-              <img src = "/public/crime1.jpg" style = "display:inline;margin-left:auto;margin-right:auto;height:150px;margin-top:0px;margin-bottom:20px;">
-
-  </div>
-</div>
-</div>
+            
+  
 
 </div>
 
@@ -236,27 +102,7 @@
 
 
       <div class = "col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1" style = "padding-top:0px;">
-       
-  
-      
-     <!-- <div class="row">
-        <div class="col-xs-10 col-xs-offset-1" style = "text-align:center;">
-          <a class="twitter-timeline" href="https://twitter.com/fcwheat" data-widget-id="451411099783397376">Tweets by @fcwheat</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div>
-      </div>-->
- 
 
-
-            <!--<div style = "text-align:center;">
-               <img class = "insta_ham" src = "http://distilleryimage9.ak.instagram.com/0bf1ef824bc011e2876222000a9f0a1b_7.jpg" >
-       
-              <img class = "insta_ham" src = "http://distilleryimage10.ak.instagram.com/7af5d97c969a11e382b512617d8fdbd6_8.jpg" >
- 
-               <img class = "insta_ham" src = "http://distilleryimage6.ak.instagram.com/94f0d370b1be11e28df322000a1f9367_7.jpg" >
-     
-    </div>-->
- 
     
 
     <!-- footer -->
@@ -296,11 +142,16 @@
 </script>
 <script>
   $(function(){
-
-    $("#typed").typed({
-      strings: ["programming","engineering", "reading", "coffee","thinking."],
-      typeSpeed: 40
-    });
+    console.log($('.hiddenContent').html());
+    if ($('.hiddenContent').html() === 'about') {
+      $("#typed").typed({
+        strings: ["programming","engineering", "reading", "coffee","thinking."],
+        typeSpeed: 40
+      });
+    }
+    else {
+      $('#typed').append('thinking.');
+    }
 
   });
   </script>

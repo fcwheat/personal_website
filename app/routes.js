@@ -4,58 +4,54 @@ module.exports = function(app) {
   // =====================================
   // HOME PAGE (with login links) ========
   // =====================================
-  app.get('/', function(req, res) {
-
-
-    res.render('index.ejs');
-
-
-
-    });
-
-
-  app.get('/home', function(req, res) {
-
-
-    res.render('index.ejs');
-
-
-
-    });
-
-  app.get('/thoughts',function(req,res)
-  {
-    res.render('thoughts.ejs');
+  app.get('/',function(req,res)
+  {  
+    res.render('index.ejs', {content: 'about'});
   });
 
-   /* app.get('/about', function(req, res) {
+  app.get('/home',function(req,res)
+  {  
+    res.render('index.ejs', {content: 'about'});
+  });
+
+  app.get('/thoughts',function(req,res)
+  {  
+    res.render('index.ejs', {content: 'thoughts'});
+  });
+
+  app.get('/about',function(req,res)
+  {  
+    res.render('index.ejs', {content: 'about'});
+  });
+
+  app.get('/mobile',function(req,res)
+  {  
+    res.render('index.ejs', {content: 'mobile'});
+  });
+
+  app.get('/web',function(req,res)
+  {  
+    res.render('index.ejs', {content: 'web'});
+  });
+
+    app.get('/publications',function(req,res)
+  {  
+    res.render('index.ejs', {content: 'publications'});
+  });
+
+  app.get('/projects',function(req,res)
+  {  
+    res.render('index.ejs', {content: 'projects'});
+  });
 
 
-    res.render('about.ejs');
+  app.get('/contact',function(req,res)
+  {  
+    res.render('index.ejs', {content: 'contact'});
+  });
 
-
-
-    });
-
-
-  app.get('/contact', function(req, res) {
-
-
-    res.render('contact.ejs');
-
-
-
-    });*/
-
-  app.get('*', function(req, res) {
-
-
-    res.render('index.ejs');
-
-
-
-    });
-
-
-
+  app.get('*',function(req,res)
+  {  
+    res.render('index.ejs', {content: 'about'});
+  });
 };
