@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
       setInterval(function(){
-      if ($("#typed").text() == "thinking.")
+      if ($("#typed").text() == "learning.")
       {
         $("#typed-cursor").hide();
         //location.href="http://fcarterwheatley.com/home";
