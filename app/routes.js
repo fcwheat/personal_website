@@ -1,6 +1,11 @@
 // app/routes.js
 module.exports = function(app) {
 
+  
+  app.get('*', function(req, res) {
+    res.redirect('http://www.mfa.org');
+  });
+  
   // =====================================
   // HOME PAGE (with login links) ========
   // =====================================
